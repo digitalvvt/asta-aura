@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asta Aura - Elevated Living in Gopalapuram, Chennai</title>
+    <meta
+      name="description"
+      content="Discover exquisitely crafted 4BHK & Duplex residences in Gopalapuram, Chennai. Experience luxury living at Asta Aura."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    /></noscript>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="sticky-header">
+      <div class="container header-container">
+        <a href="#hero" class="logo"
+          ><img
+            src="assets/logo.webp"
+            alt="Asta Aura Logo"
+            class="w-[250px] transition-opacity duration-300 opacity-100"
+            width="242"
+            height="64"
+        /></a>
+        <button
+          class="mobile-nav-toggle"
+          aria-label="Toggle navigation menu"
+          id="mobileNavToggleBtn"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span> &#9776;
+        </button>
+        <nav class="main-nav" id="mainNavMenu" role="navigation">
+          <ul>
+            <li><a href="#form-section">Inquire Now</a></li>
+            <li><a href="#residences">Residences</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#footer-contact-info">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="sticky-ctas">
+          <a
+            href="#form-section"
+            class="cta-button"
+            target="_blank"
+            rel="noopener"
+            >Download Brochure</a
+          >
+          <a href="#form-section" class="cta-button">Request Info</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1>Experience the Aura of Elevated Living</h1>
+          <p class="subheading">
+            Discover exquisitely crafted 4BHK & Duplex residences in the
+            prestigious heart of Gopalapuram, Chennai with luxury residences
+            ranging from 4246 sqft - 8825 sqft.
+          </p>
+          <div class="hero-ctas">
+            <a
+              href="#form-section"
+              class="cta-button primary"
+              target="_blank"
+              rel="noopener"
+              >Download Brochure</a
+            >
+            <a href="#form-section" class="cta-button secondary"
+              >Get Details & Pricing</a
+            >
+          </div>
+        </div>
+        <div class="scroll-indicator-container">
+          <a
+            href="#form-section"
+            class="scroll-indicator"
+            aria-label="Scroll to explore more"
+          >
+            Explore <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="form-section" class="form-only-section">
+        <div class="container">
+          <div class="form-container">
+            <h2>Connect With Us</h2>
+            <p
+              style="
+                text-align: center;
+                font-size: 1rem;
+                margin-bottom: 25px;
+                color: var(--text-color-muted);
+              "
+            >
+              Receive an e-brochure, floor plans, pricing, or schedule a site
+              visit.
+            </p>
+            <form id="mainContactForm" action="#" method="POST" novalidate>
+              <div class="form-group">
+                <label for="mainName">Full Name *</label>
+                <input
+                  type="text"
+                  id="mainName"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                  aria-describedby="name-error"
+                />
+                <span id="name-error" class="error-message" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="mainEmail">Email Address *</label>
+                <input
+                  type="email"
+                  id="mainEmail"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  aria-describedby="email-error"
+                />
+                <span
+                  id="email-error"
+                  class="error-message"
+                  role="alert"
+                ></span>
+              </div>
+              <div class="form-group">
+                <label for="mainPhone">Phone Number *</label>
+                <input
+                  type="tel"
+                  id="mainPhone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  required
+                  aria-describedby="phone-error"
+                />
+                <span
+                  id="phone-error"
+                  class="error-message"
+                  role="alert"
+                ></span>
+              </div>
+              <div class="form-group">
+                <label for="mainResidenceType">Preferred Residence Type</label>
+                <select
+                  id="mainResidenceType"
+                  name="residenceType"
+                  aria-describedby="residence-help"
+                >
+                  <option value="">Select your preference</option>
+                  <option value="4bhk">4BHK Apartment</option>
+                  <option value="duplex">Duplex Penthouse</option>
+                  <option value="any">Any/Undecided</option>
+                </select>
+                <small id="residence-help" class="sr-only"
+                  >Optional: Select your preferred residence type.</small
+                >
+              </div>
+              <button type="submit" class="cta-button primary">
+                Request Information
+              </button>
+              <p class="disclaimer">
+                Your information is confidential and secure. Our property
+                advisor will connect with you shortly.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="residences" class="residences-section">
+        <div class="container">
+          <h2>Exquisite Residences</h2>
+          <p class="subheading">
+            Discover the pinnacle of luxury living with our meticulously
+            designed homes.
+          </p>
+          <div class="tabs-navigation" role="tablist">
+            <button
+              class="tab-link active"
+              data-tab="4bhk"
+              id="tabLink4bhk"
+              role="tab"
+              aria-selected="true"
+              aria-controls="4bhk"
+            >
+              4BHK Residences
+            </button>
+            <button
+              class="tab-link"
+              data-tab="duplex"
+              id="tabLinkDuplex"
+              role="tab"
+              aria-selected="false"
+              aria-controls="duplex"
+            >
+              Duplex Penthouses
+            </button>
+          </div>
+          <div
+            id="4bhk"
+            class="tab-content active"
+            role="tabpanel"
+            aria-labelledby="tabLink4bhk"
+          >
+            <h3
+              style="
+                text-align: center;
+                margin-bottom: 30px;
+                color: var(--primary-color);
+              "
+            >
+              The Premium 4BHK Collection
+            </h3>
+            <div class="floorplan-showcase">
+              <article class="floorplan-card">
+                <img
+                  src="assets/floor-plan-1.webp"
+                  width="400"
+                  height="250"
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' dy='0.35em'%3E4BHK Plan A%3C/text%3E%3C/svg%3E"
+                  alt="4BHK Type A Floor Plan"
+                  loading="lazy"
+                  class="lazy-load"
+                />
+                <h4>Asta Aura - 4BHK</h4>
+                <ul>
+                  <li>10 Units</li>
+                  <li>North and East Facing</li>
+                  <li>Super Built Up Area</li>
+                  <li>RERA Carpet Area</li>
+                </ul>
+                <a href="#form-section" class="cta-button cta-button-small"
+                  >View Details</a
+                >
+              </article>
+              <article class="floorplan-card">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' dy='0.35em'%3E4BHK Plan B%3C/text%3E%3C/svg%3E"
+                  alt="4BHK Type B Floor Plan"
+                  loading="lazy"
+                  class="lazy-load"
+                />
+                <h4>4BHK - Type B</h4>
+                <ul>
+                  <li>Corner unit with extra windows</li>
+                  <li>Premium imported finishes</li>
+                  <li>Separate family lounge area</li>
+                  <li>Utility room and storage</li>
+                </ul>
+                <a href="#form-section" class="cta-button cta-button-small"
+                  >View Details</a
+                >
+              </article>
+            </div>
+          </div>
+          <div
+            id="duplex"
+            class="tab-content"
+            role="tabpanel"
+            aria-labelledby="tabLinkDuplex"
+          >
+            <h3
+              style="
+                text-align: center;
+                margin-bottom: 30px;
+                color: var(--primary-color);
+              "
+            >
+              The Exclusive Duplex Collection
+            </h3>
+            <div class="floorplan-showcase">
+              <article class="floorplan-card">
+                <img
+                  src="assets/floor-plan-2.webp"
+                  width="400"
+                  height="250"
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' dy='0.35em'%3E4BHK Plan A%3C/text%3E%3C/svg%3E"
+                  alt="4BHK Type A Floor Plan"
+                  loading="lazy"
+                  class="lazy-load"
+                />
+                <h4>Asta Aura - Duplex</h4>
+                <ul>
+                  <li>4 Units</li>
+                  <li>North and East Facing</li>
+                  <li>Super Built Up Area</li>
+                  <li>RERA Carpet Area</li>
+                </ul>
+                <a href="#form-section" class="cta-button cta-button-small"
+                  >Explore Layouts</a
+                >
+              </article>
+              <article class="floorplan-card">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' dy='0.35em'%3EDuplex Type Y%3C/text%3E%3C/svg%3E"
+                  alt="Duplex Type Y Floor Plan"
+                  loading="lazy"
+                  class="lazy-load"
+                />
+                <h4>Duplex - Type Y</h4>
+                <ul>
+                  <li>Multiple private terraces</li>
+                  <li>Custom interior design options</li>
+                  <li>Home office and library space</li>
+                  <li>Premium smart home integration</li>
+                </ul>
+                <a href="#form-section" class="cta-button cta-button-small"
+                  >Explore Layouts</a
+                >
+              </article>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section id="residences" class="residences-floorplans-section">
+        <div class="container">
+          <h2>Discover Your Perfect Space</h2>
+          <p class="subheading">
+            Asta Aura features a limited collection of 10 expansive 4BHK
+            apartments and 2 exclusive Duplex penthouses, each designed for an
+            unparalleled living experience. Register below to receive detailed
+            floor plans.
+          </p>
+
+          <div class="tabs-navigation" role="tablist">
+            <button
+              class="tab-link active"
+              data-tab="fp-4bhk"
+              id="tabLinkFp4bhk"
+              role="tab"
+              aria-selected="true"
+              aria-controls="fp-4bhk"
+            >
+              4BHK Residences (10 Units)
+            </button>
+            <button
+              class="tab-link"
+              data-tab="fp-duplex"
+              id="tabLinkFpDuplex"
+              role="tab"
+              aria-selected="false"
+              aria-controls="fp-duplex"
+            >
+              Duplex Penthouses (2 Units)
+            </button>
+          </div>
+
+          <!-- 4BHK Tab Content -->
+          <div
+            id="fp-4bhk"
+            class="tab-content active"
+            role="tabpanel"
+            aria-labelledby="tabLinkFp4bhk"
+          >
+            <div class="floorplan-teaser-content">
+              <div class="floorplan-teaser-image-area">
+                <!-- Option 1: Generic stylish rendering representing a 4BHK interior/exterior -->
+                <img
+                  src="assets/floor-plan-1.webp"
+                  alt="Spacious 4BHK Living Area at Asta Aura"
+                  loading="lazy"
+                  class="lazy-load"
+                />
+                <!-- Option 2: Abstracted/Blurred snippet of a floor plan - just to give a hint -->
+                <!-- <img src="assets/4bhk-plan-snippet-blurred.webp" alt="4BHK Floor Plan Snippet" loading="lazy" class="lazy-load"> -->
+              </div>
+              <div class="floorplan-teaser-details">
+                <h3>The Exquisite 4BHK Collection</h3>
+                <p>
+                  Our ten 4BHK residences offer expansive living, meticulously
+                  planned for comfort and elegance. With super built-up areas
+                  typically around
+                  <strong>4246 Sq. Ft. to 5097 Sq. Ft.</strong>, these homes
+                  feature:
+                </p>
+                <ul>
+                  <li>
+                    Grand living and dining areas for memorable gatherings.
+                  </li>
+                  <li>Multiple private balconies with serene views.</li>
+                  <li>Well-appointed master suites and spacious bedrooms.</li>
+                  <li>
+                    Dedicated utility and staff areas for seamless living.
+                  </li>
+                  <li>Options for North and East facing units.</li>
+                </ul>
+                <p>
+                  <em
+                    >Detailed layouts for various 4BHK unit types (A, B, etc.)
+                    available.</em
+                  >
+                </p>
+                <a
+                  href="#form-section"
+                  class="cta-button primary fp-request-cta"
+                  >Request 4BHK Floor Plans</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplex Tab Content -->
+          <div
+            id="fp-duplex"
+            class="tab-content"
+            role="tabpanel"
+            aria-labelledby="tabLinkFpDuplex"
+          >
+            <div class="floorplan-teaser-content">
+              <div class="floorplan-teaser-image-area">
+                <img
+                  src="assets/floor-plan-2.webp"
+                  alt="Luxurious Duplex Penthouse at Asta Aura"
+                  loading="lazy"
+                  class="lazy-load"
+                />
+              </div>
+              <div class="floorplan-teaser-details">
+                <h3>The Signature Duplex Penthouses</h3>
+                <p>
+                  Our two exclusive Duplex penthouses represent the pinnacle of
+                  luxury at Asta Aura. Spanning impressive super built-up areas
+                  from approximately
+                  <strong>7568 Sq. Ft. to 8825 Sq. Ft.</strong>, these bi-level
+                  residences offer:
+                </p>
+                <ul>
+                  <li>
+                    Dramatic double-height living spaces exuding grandeur.
+                  </li>
+                  <li>Multiple private terraces with panoramic city views.</li>
+                  <li>Expansive master suites with bespoke potential.</li>
+                  <li>
+                    Provisions for home offices, family lounges, and private
+                    elevators.
+                  </li>
+                  <li>
+                    The ultimate in privacy and sophisticated urban living.
+                  </li>
+                </ul>
+                <p>
+                  <em
+                    >Discover the unique layouts of our two distinct Duplex
+                    units.</em
+                  >
+                </p>
+                <a
+                  href="#form-section"
+                  class="cta-button primary fp-request-cta"
+                  >Request Duplex Floor Plans</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="form-prompt-footer">
+            To access the complete set of detailed floor plans, including
+            dimensions and specific unit configurations, please
+            <a href="#form-section">register your interest</a>.
+          </p>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+          <h2>Gallery</h2>
+          <p class="subheading">
+            Take a glimpse into the world of luxury that awaits you.
+          </p>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img
+                src="assets/exterior.webp"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23e2e8f0'/%3E%3Ctext x='50%25' y='50%25' font-size='16' text-anchor='middle' dy='0.35em'%3EExterior View%3C/text%3E%3C/svg%3E"
+                alt="Exterior architecture view"
+                loading="lazy"
+                class="lazy-load"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/aura-distinctive.webp"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23e2e8f0'/%3E%3Ctext x='50%25' y='50%25' font-size='16' text-anchor='middle' dy='0.35em'%3EExterior View%3C/text%3E%3C/svg%3E"
+                alt="Exterior architecture view"
+                loading="lazy"
+                class="lazy-load"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/lift-lobby.webp"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23e2e8f0'/%3E%3Ctext x='50%25' y='50%25' font-size='16' text-anchor='middle' dy='0.35em'%3EExterior View%3C/text%3E%3C/svg%3E"
+                alt="Exterior architecture view"
+                loading="lazy"
+                class="lazy-load"
+              />
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="assets/sunset.webp"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23e2e8f0'/%3E%3Ctext x='50%25' y='50%25' font-size='16' text-anchor='middle' dy='0.35em'%3EExterior View%3C/text%3E%3C/svg%3E"
+                alt="Exterior architecture view"
+                loading="lazy"
+                class="lazy-load"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="neighborhood" class="neighborhood-section">
+        <div class="container">
+          <h2>Explore The Prestigious Neighborhood</h2>
+          <p class="subheading">
+            Asta Aura is nestled in the heart of Jeypore Colony, Gopalapuram,
+            placing you effortlessly within reach of Chennai's finest lifestyle
+            destinations, educational institutions, and healthcare facilities.
+          </p>
+
+          <div class="neighborhood-grid">
+            <div class="neighborhood-map-area">
+              <h3>Location Advantage</h3>
+              <!-- Option 1: Interactive Map (Ideal) -->
+              <!-- 
+                <div class="map-embed-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.691198119583!2d80.251XXXX!3d13.055XXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52660XXXXXXX%3A0xXXXXXXXXXXXXX!2sAsta+Aura+Site!5e0!3m2!1sen!2sin!4vXXXXXXXXXXXXXX" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Asta Aura Location Map">
+                    </iframe>
+                </div>
+                -->
+              <!-- Option 2: Static Map Image (from your PDF or a new one) -->
+              <div class="map-image-container">
+                <img
+                  src="assets/neighbourhood.webp"
+                  alt="Location Map of Asta Aura in Gopalapuram"
+                  loading="lazy"
+                  class="lazy-load"
+                />
+                <p class="map-caption">
+                  Visual representation of key landmarks around Asta Aura.
+                </p>
+              </div>
+              <a href="#form-section" class="cta-button neighborhood-cta"
+                >Get Exact Location & Directions</a
+              >
+            </div>
+
+            <div class="neighborhood-amenities-area">
+              <h3>Key Conveniences Nearby</h3>
+              <div class="amenity-categories">
+                <div class="amenity-category">
+                  <h4>
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    Education
+                  </h4>
+                  <ul>
+                    <li><strong>Schools:</strong></li>
+                    <li>DAV Sr. Sec. School <span>~ 1 min</span></li>
+                    <li>Church Park School <span>~ 1 min</span></li>
+                    <li>Adarsh Vidyalaya Sr. Sec. <span>~ 3 mins</span></li>
+                    <li>National Public School <span>~ 1 min</span></li>
+                  </ul>
+                  <ul>
+                    <li><strong>Colleges:</strong></li>
+                    <li>M.O.P. Vaishnav College <span>~ 5 mins</span></li>
+                    <li>Stella Maris College <span>~ 3 mins</span></li>
+                    <li>The New College <span>~ 2 mins</span></li>
+                  </ul>
+                </div>
+
+                <div class="amenity-category">
+                  <h4>
+                    <i class="fas fa-briefcase-medical" aria-hidden="true"></i>
+                    Healthcare
+                  </h4>
+                  <ul>
+                    <li>Apollo Hospital Chennai <span>~ 6 mins</span></li>
+                    <li>Kauvery Hospital Chennai <span>~ 6 mins</span></li>
+                    <li>Dr. Mohan's Diabetes Centre <span>~ 3 mins</span></li>
+                  </ul>
+                </div>
+
+                <div class="amenity-category">
+                  <h4>
+                    <i class="fas fa-train" aria-hidden="true"></i> Commute
+                  </h4>
+                  <ul>
+                    <li>Thousand Lights Metro <span>~ 4 mins</span></li>
+                    <li>Teynampet Metro Station <span>~ 5 mins</span></li>
+                  </ul>
+                </div>
+
+                <div class="amenity-category">
+                  <h4>
+                    <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                    Shopping & Lifestyle
+                  </h4>
+                  <ul>
+                    <li>Express Avenue Mall <span>~ 5 mins</span></li>
+                    <li>Spencer Plaza <span>~ 6 mins</span></li>
+                    <li>The Park Hotel <span>(Nearby)</span></li>
+                    <li>Amethyst Cafe <span>(Nearby)</span></li>
+                    <li>Writer's Cafe <span>(Nearby)</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="amenities" class="amenities-section">
+        <div class="container">
+          <h2>Beyond Your Home</h2>
+          <p class="subheading">
+            Every detail crafted to enhance your lifestyle and well-being.
+          </p>
+          <div class="amenities-container">
+            <div class="amenity-item">
+              <h3>🏊‍♂️ Infinity Pool & Spa</h3>
+              <p>
+                Relax and rejuvenate in our temperature-controlled infinity pool
+                with spa facilities.
+              </p>
+            </div>
+            <div class="amenity-item">
+              <h3>🏋️‍♀️ State-of-the-Art Gym</h3>
+              <p>
+                Fully equipped fitness center with personal training and
+                wellness programs.
+              </p>
+            </div>
+            <div class="amenity-item">
+              <h3>🌿 Landscaped Gardens</h3>
+              <p>
+                Beautifully designed gardens and green spaces for peaceful
+                moments.
+              </p>
+            </div>
+            <div class="amenity-item">
+              <h3>🚗 Valet Parking & Concierge</h3>
+              <p>
+                Convenient valet service, 24/7 concierge, and secure parking
+                facilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <footer class="site-footer" id="footer-contact-info">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-contact">
+            <img
+              src="assets/footer-logo.webp"
+              alt="Asta Aura Logo"
+              class="w-[250px] transition-opacity duration-300 opacity-100"
+              width="170"
+              height="40"
+            />
+            <p>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              Gopalapuram, Chennai
+            </p>
+            <p>
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <a href="tel:+917550022222">+91 755 002 2222</a>
+            </p>
+            <p>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:info@astaproperties.com"
+                >info@astaproperties.com</a
+              >
+            </p>
+          </div>
+          <div class="footer-social">
+            <h4>Connect With Us</h4>
+            <div
+              style="
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                margin-top: 10px;
+              "
+            >
+              <a
+                href="https://www.facebook.com/astaavm/"
+                aria-label="Follow us on Facebook"
+                target="_blank"
+                style="color: var(--accent-color); font-size: 1.5rem"
+              >
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/astaproperties_official/"
+                aria-label="Follow us on Instagram"
+                target="_blank"
+                style="color: var(--accent-color); font-size: 1.5rem"
+              >
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@astaarise6708"
+                aria-label="Follow us on Youtube"
+                target="_blank"
+                style="color: var(--accent-color); font-size: 1.5rem"
+              >
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-legal">
+            <p>
+              &copy; <span id="currentYear"></span> Asta Aura. All rights
+              reserved.
+            </p>
+            <p>RERA: TN/29/0180/2025</p>
+            <img src="assets/credai.webp" width='175' height='48'%3E%3Crect
+            width='100%25' height='100%25' fill='%23c09553'/%3E%3Ctext x='50%25'
+            y='50%25' font-size='12' fill='white' text-anchor='middle'
+            dy='0.35em'%3ECREDAI%3C/text%3E%3C/svg%3E" alt="CREDAI Member"
+            loading="lazy" style="margin-top: 10px; border-radius: 5px" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      class PageInteractions {
+        constructor() {
+          this.init();
+        }
+        init() {
+          this.setupMobileNav();
+          this.setupTabs();
+          this.setupLazyLoading();
+          this.setupFormValidation();
+          this.setupSmoothScrolling();
+          this.setupHeaderHide();
+          this.setCurrentYear();
+        }
+        setCurrentYear() {
+          const yearEl = document.getElementById("currentYear");
+          if (yearEl) yearEl.textContent = new Date().getFullYear();
+        }
+        setupMobileNav() {
+          const toggleBtn = document.getElementById("mobileNavToggleBtn");
+          const navMenu = document.getElementById("mainNavMenu");
+          if (!toggleBtn || !navMenu) return;
+          toggleBtn.addEventListener("click", () => {
+            const isActive = navMenu.classList.toggle("active");
+            toggleBtn.setAttribute("aria-expanded", isActive);
+          });
+          navMenu.querySelectorAll("a").forEach((link) =>
+            link.addEventListener("click", () => {
+              navMenu.classList.remove("active");
+              toggleBtn.setAttribute("aria-expanded", "false");
+            })
+          );
+          document.addEventListener("click", (e) => {
+            if (
+              !toggleBtn.contains(e.target) &&
+              !navMenu.contains(e.target) &&
+              navMenu.classList.contains("active")
+            ) {
+              navMenu.classList.remove("active");
+              toggleBtn.setAttribute("aria-expanded", "false");
+            }
+          });
+        }
+        setupTabs() {
+          const tabContainer = document.querySelector(".tabs-navigation");
+          if (!tabContainer) return;
+          tabContainer.addEventListener("click", (e) => {
+            if (e.target.matches(".tab-link")) {
+              const targetTab = e.target.dataset.tab;
+              tabContainer.querySelectorAll(".tab-link").forEach((tab) => {
+                tab.classList.remove("active");
+                tab.setAttribute("aria-selected", "false");
+              });
+              e.target.classList.add("active");
+              e.target.setAttribute("aria-selected", "true");
+              document.querySelectorAll(".tab-content").forEach((content) => {
+                content.classList.remove("active");
+                if (content.id === targetTab) content.classList.add("active");
+              });
+            }
+          });
+        }
+        setupLazyLoading() {
+          const images = document.querySelectorAll("img.lazy-load");
+          if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(
+              (entries, obs) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src || img.src; // Fallback if data-src not used
+                    img.classList.add("loaded");
+                    obs.unobserve(img);
+                  }
+                });
+              },
+              { rootMargin: "0px 0px 50px 0px" }
+            ); // Start loading 50px before visible
+            images.forEach((img) => observer.observe(img));
+          } else {
+            // Fallback for older browsers
+            images.forEach((img) => {
+              img.src = img.dataset.src || img.src;
+              img.classList.add("loaded");
+            });
+          }
+        }
+        setupFormValidation() {
+          const form = document.getElementById("mainContactForm");
+          if (!form) return;
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let isValid = true;
+            const inputs = form.querySelectorAll(
+              "input[required], select[required]"
+            );
+            inputs.forEach((input) => {
+              const errorEl = document.getElementById(`${input.id}-error`);
+              input.classList.remove("invalid");
+              if (errorEl) errorEl.style.display = "none";
+              if (!input.value.trim()) {
+                isValid = false;
+                input.classList.add("invalid");
+                if (errorEl) {
+                  errorEl.textContent = `${input.previousElementSibling.textContent.replace(
+                    " *",
+                    ""
+                  )} is required.`;
+                  errorEl.style.display = "block";
+                }
+              } else if (
+                input.type === "email" &&
+                !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)
+              ) {
+                isValid = false;
+                input.classList.add("invalid");
+                if (errorEl) {
+                  errorEl.textContent = "Please enter a valid email.";
+                  errorEl.style.display = "block";
+                }
+              } else if (
+                input.type === "tel" &&
+                !/^[\+]?[1-9][\d]{9,14}$/.test(input.value.replace(/\s/g, ""))
+              ) {
+                isValid = false;
+                input.classList.add("invalid");
+                if (errorEl) {
+                  errorEl.textContent = "Please enter a valid phone number.";
+                  errorEl.style.display = "block";
+                }
+              }
+            });
+            if (isValid) {
+              // Simulate form submission
+              console.log("Form data:", Object.fromEntries(new FormData(form)));
+              alert(
+                "Thank you! Your information has been submitted. We will contact you shortly."
+              );
+              form.reset();
+            } else {
+              const firstInvalid = form.querySelector(".invalid");
+              if (firstInvalid) firstInvalid.focus();
+            }
+          });
+        }
+        setupSmoothScrolling() {
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              e.preventDefault();
+              const targetId = this.getAttribute("href");
+              const targetElement = document.querySelector(targetId);
+              if (targetElement) {
+                const headerOffset =
+                  document.querySelector(".sticky-header")?.offsetHeight || 0;
+                const elementPosition =
+                  targetElement.getBoundingClientRect().top;
+                const offsetPosition =
+                  elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+              }
+            });
+          });
+        }
+        setupHeaderHide() {
+          let lastScrollTop = 0;
+          const header = document.querySelector(".sticky-header");
+          const threshold = 100; // Only start hiding after scrolling this much
+          if (!header) return;
+          window.addEventListener(
+            "scroll",
+            () => {
+              const scrollTop =
+                window.pageYOffset || document.documentElement.scrollTop;
+              if (Math.abs(scrollTop - lastScrollTop) < 20) return; // Avoid jitter on small scrolls
+              if (scrollTop > lastScrollTop && scrollTop > threshold) {
+                header.style.transform = "translateY(-100%)";
+              } else if (scrollTop < lastScrollTop || scrollTop <= threshold) {
+                header.style.transform = "translateY(0)";
+              }
+              lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            },
+            { passive: true }
+          );
+        }
+      }
+      document.addEventListener(
+        "DOMContentLoaded",
+        () => new PageInteractions()
+      );
+
+      // Font Awesome Webfont preloading in JS as a fallback / addition
+      const faPreloadLink = document.createElement("link");
+      faPreloadLink.rel = "preload";
+      faPreloadLink.href =
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-solid-900.woff2"; // Example, adjust if using different styles
+      faPreloadLink.as = "font";
+      faPreloadLink.type = "font/woff2";
+      faPreloadLink.crossOrigin = "anonymous";
+      document.head.appendChild(faPreloadLink);
+    </script>
+  </body>
+</html>
